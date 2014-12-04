@@ -1,0 +1,412 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+body {
+    font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
+	background-color: lightblue;
+}
+
+a {
+	color: black;
+}
+
+
+header {
+	background: url('../img/background_beach.png') no-repeat center bottom;
+	height: 600px;
+	border: 1px solid white;
+	border: 1px solid white;
+	display: none;
+}
+
+.headerbox {
+	width: 80%;
+	margin: auto;
+}
+
+.profilebox {
+	float: left;
+	width: 18%;
+	min-width: 150px;	
+	margin-right: 3em;
+}
+
+.profilepic {
+	border: 8px solid white;
+	padding: 0.5em;
+}
+
+.profilepic img {
+	width: 100%;
+	height: auto;
+}
+
+.aboutbox {
+	overflow: hidden;
+	width: 70%;
+	border: 8px solid white;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 5em 2em;
+	background: rgba(255,255,255,0.5);
+}
+
+.aboutbox h1 {
+	margin: 0 0 0.2em;
+	color: #222;
+}
+
+.aboutbox h2 {
+	margin: 0 0 1em;
+	color: #444;	
+}
+
+a.contactbutton{
+	display: block;
+	width: 70%;
+	margin: 1em auto;
+	padding: 0.4em 1em 0.3em 1em;
+	background: white;
+	color: #666;
+	border: 1px solid #888;
+	border-radius: 4px;
+	text-decoration: none;
+	font-face: bold;
+}
+
+a.contactbutton:hover{
+	background: #eee;
+}
+
+ 
+article {
+	padding: 1em;
+	margin: auto;
+}
+
+section {
+	padding-top: 2em;
+	margin-bottom: 1em;
+}
+
+.item p {
+	margin: 0;
+}
+
+.item {
+	margin: 1.2em 0;
+}
+
+.date {
+	color: steelblue;
+}
+
+
+footer {
+	background: white;
+	padding: 1em;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: black;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.contactform {
+	display: none;
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	background: rgba(255,255,255,0.95);
+	border: 7px solid white;
+	border-radius: 3px;	
+	padding: .7em;
+}
+
+p.closebutton {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+
+nav {
+	background: white;
+	margin: 0;
+}
+
+nav h1 {
+	margin: 0.2em;
+	text-align: center;
+	font-size: 1.2em;
+	color: black;
+}
+
+nav ul {
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: black;
+    background: #999;
+
+	border: 1px solid black;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+header {
+	display: block;
+}
+
+
+/* ==========================================================================
+   Menu Toggle classes
+   ========================================================================== */
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.fixed h1 {
+	color: black;
+}
+
+
+nav {
+	#height: 3em;
+	box-shadow: 0 10px 5px #888;
+}
+
+nav h1 {
+	text-align: left;
+	float: left;
+	margin-top: .5em;
+	margin-left: .5em;
+	color: transparent;
+}
+
+
+nav a {
+	float: left;
+	width: 30%;
+	margin: 0;
+	padding: 10px 1.1%;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 0;
+}
+
+nav a:hover,
+nav a:visited {
+    color: #555;
+}
+
+nav li:first-child a {
+#	margin-left: 0;
+}
+
+nav li:last-child a {
+#	margin-right: 0;
+}
+
+
+article {
+	width: 75%;
+}
+
+
+footer p {
+	display: inline;
+	margin: 1em;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+article {
+	width: 65%;
+}
+
+.contactform {
+	width: 40%;
+	left: 30%;
+}
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .body {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
